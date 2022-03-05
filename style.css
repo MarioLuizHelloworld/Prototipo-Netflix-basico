@@ -1,0 +1,145 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'netflix';
+    src: url('fontes/NetflixSansMedium.ttf') format('truetype');
+}
+
+:root{
+    --vermelho: #E50914;
+    --preta: #141414;
+    --netflix: 'netflix';
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--preta);
+    font-family: var(--netflix), sans-serif;
+    color: white;
+
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.logo{
+    margin-left: 6px;
+    color: var(--vermelho);
+    font-family: var(--netflix);
+    font-size: 2.4em;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+main h3 {
+    margin-top: 15%;
+    font-size: 3em;
+}
+
+.container{
+    margin-left: 20px;
+}
+
+.descricao{
+    margin-top: 10px;
+}
+
+/* Filme Principal*/
+.filme-principal{
+    font-size: 16px;
+    height: 600px;
+    background: url('img/david.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .container{
+    width: 65%;
+}
+
+.filme-principal .descricao{
+    margin-bottom: 40px;
+}
+
+.botao{
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+}
+
+.botao:hover{
+    background-color: white;
+    color: var(--preta);
+    transition: .4s;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.owl-theme{
+    margin-top: 8px;
+}
+
+.carrosel-filmes{
+    margin-top: 10px;
+    padding: 30px;
+}
+
+footer{
+    margin: 10px 0px 0px 50px;
+}
+
+footer a{
+    padding: 6px;
+    color: #fff;
+}
+
+footer a:hover{
+    color: white;
+}
+
+.inc{
+    margin-top: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #AAA;
+}
+
+.inc a{
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+.inc a:active{
+    color: #E50914;
+    text-decoration: underline;
+}
