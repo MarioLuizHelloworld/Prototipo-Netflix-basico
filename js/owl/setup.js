@@ -14,3 +14,11 @@ $('.owl-carousel').owlCarousel({
         }
     }
 })
+
+function abrirModal(){
+    document.getElementById('modal').style.top = "-1%";
+}
+
+function fecharModal(){
+    document.getElementById('modal').style.top = "100%"
+}
