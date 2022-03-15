@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,15 +17,16 @@
 
     <title>Netflix Clone</title>
 </head>
+
 <body>
     <header>
         <div class="container">
-            <h2 class="logo">ANIMALFLIX</h2>
+            <h2 class="logo"><a href="index.html">ANIMALFLIX</a></h2>
             <nav>
-            <a href="#">Inicio</a>
-            <a href="#">Séries</a>
-            <a href="#">Filmes</a>
-            <a href="#">Documentários</a>
+                <a href="index.html">Inicio</a>
+                <a href="#rodape">Bombando</a>
+                <a href="page03.html">Filmes</a>
+                <a href="#documentario">Documentários</a>
             </nav>
 
         </div>
@@ -33,40 +35,92 @@
         <div class="filme-principal">
             <div class="container">
                 <h3 class="titulo">
-                    David Attenborough e Nosso Planeta 
+                    David Attenborough e Nosso Planeta
                 </h3>
-                    <p class="descricao">O naturalista britânico fala sobre sua trajetória e a evolução da vida na Terra, lamenta a perda de áreas selvagens do planeta e oferece sua visão de um futuro possível.</p>
-                    <div class="botoes">
+                <p class="descricao">O naturalista britânico fala sobre sua trajetória e a evolução da vida na Terra,
+                    lamenta a perda de áreas selvagens do planeta e oferece sua visão de um futuro possível.</p>
+                <div class="botoes">
+                    <a href="page03.html">
                         <button role="button" class="botao">
                             <i class="fa-solid fa-play"></i>
                             ASSISTIR AGORA
                         </button>
-                        
-                        <button role="button" class="botao" class="open-modal" onclick="abrirModal()">
-                            <i class="fa-solid fa-circle-info"></i>
-                            MAIS INFORMAÇÕES
-                        </button>
+                    </a>
 
-                        <div class="bg-modal" id="modal">
-                            <div class="modal">
-                                <span class="close" onclick="fecharModal()">&times;</span>
+                    <button role="button" class="botao" class="open-modal" onclick="abrirModal()">
+                        <i class="fa-solid fa-circle-info"></i>
+                        MAIS INFORMAÇÕES
+                    </button>
+
+                    <div class="bg-modal" id="modal">
+                        <div class="modal">
+                            <span class="close" onclick="fecharModal()">&times;</span>
+                            <picture>
+                                <source media="(max-width: 655px)" srcset="img/eu-pq.jpg">
                                 <img class="img" src="img/eu.jpg" alt="eu" width="100%" height="98%">
-                                <p>Olá, meu nome é Mario Almeida, seja bem vindo ao meu espaço!
-                                    Sou carioca, biólogo por formação, apaixonado por aprender e ensinar.
-                                    
-                                    Sou uma pessoa que gosta de desafios! Durante a faculdade, por 6 meses, fiz atletismo; o esporte requeria de mim foco, determinação, dedicação, organização e disciplina. Hoje, levo comigo o pensamento que quando desejo algo, é necessário ser perseverante para conquistar meus objetivos.
-                                    
-                                    Após a faculdade, me aventurei por 3 meses nos EUA, onde desenvolvi um pouco mais o inglês, conheci uma nova cultura, novos hábitos e no autoconhecimento, descobri um desejo de empreender, ao mesmo tempo em que contribuo para a preservação do meio ambiente.
-                                    Com a ideia do empreendedorismo, desenvolvi uma microempresa que vende grãos de café torrado cobertos com chocolate. Os grãos são provenientes de lavouras de pequenos produtores em Minas Gerais, onde incentivamos a pequena produção e menor impacto de descarte de lixo (borra e filtro de café).
-                                    
-                                    Com a empresa em testes ainda, busquei abrir meus horizontes e testar novas possibilidades: foi aí que pesquisei a fundo a área tecnológica, e me apaixonei pela parte de programação e desenvolvimento. 
-                                    
-                                    Esse, é meu primeiro projeto, onde coloquei em prática todo os ensinamentos que obtive através do curso (colocar o que é). Eu quis ir um pouco além do óbvio, colocando esse breve resumo da minha trajetória, pois acredito que o excelente profissional, é muito mais que a parte técnica da profissão; ele se forma no conjunto de todas as suas experiências!</p>
-                            </div>
+                            </picture>
 
+                            <!--&emsp; 4 espaços, &ensp; dois espaços, &nbsp; um espaço-->
+                            <p class="space"> <strong>100% relevante para o trabalho &ensp;</strong> 1995 &ensp;<img
+                                    src="img/imgpicon.ico" alt="ico" width=20px height=20px>&ensp; 8h 00min de estudo
+                                diário &ensp;<img src="img/hd.png" alt="hd" width="20px"></p>
+                            <br>
+                            <ul class="space">
+                                <li>
+                                    Olá, meu nome é Mario Almeida, seja bem vindo ao meu espaço!
+                                    Sou carioca, biólogo por formação, apaixonado por aprender e ensinar.
+                                </li>
+
+                                <br>
+                                <li>
+                                    Sempre gostei de desafios! Durante a faculdade, por 6 meses, fiz atletismo; o
+                                    esporte requeria de mim foco, determinação, dedicação, organização e disciplina.
+                                    Hoje, levo comigo o pensamento que quando desejo algo, é necessário ser perseverante
+                                    para conquistar meus objetivos.
+                                </li>
+                                <br>
+
+                                <li>
+                                    Após a faculdade, me aventurei por 3 meses nos EUA, onde desenvolvi um pouco mais o
+                                    inglês, conheci uma nova cultura, novos hábitos e ampliei minha visão de mundo.
+                                    Essa experiência me auxiliou durante a pandemia, pois para não "ficar parado",
+                                    desenvolvi uma microempresa, com atuação majoritariamente online, que vende grãos de
+                                    café torrado cobertos com chocolate. Os grãos são provenientes de lavouras de
+                                    pequenos produtores em Minas Gerais, com o foco da empresa na redução do descarte de
+                                    resíduos (borra e filtro de café).
+                                </li>
+                                <br>
+
+                                <li>
+                                    Essa atuação online me aproximou cada vez mais da tecnologia, foi então que
+                                    pesquisei a fundo a área tecnológica, e me apaixonei pela parte de programação e
+                                    desenvolvimento.
+                                </li>
+                                <br>
+
+                                <li>
+                                    Nesse projeto básico, quis ir um pouco além do óbvio, colocando esse
+                                    breve resumo da minha trajetória, pois acredito que o excelente profissional é muito
+                                    mais que a parte técnica da profissão; ele se forma no conjunto de todas as suas
+                                    experiências!
+                                </li>
+
+                            </ul>
+                            <p>
+                            <ul>
+                                <li>
+                                    <a class="curriculo" href="pasta curriculum/Curriculum-Mario-Almeida-2022.pdf"
+                                        download="Curriculum-Mario-Almeida-2022.pdf" type="application/pdf"><img
+                                            src="img/pdf.png" alt="pdf" width="15px">
+                                        Curriculum</a>
+                                </li>
+                            </ul>
+                            </p>
                         </div>
-                        
+
                     </div>
+
+                </div>
             </div>
 
         </div>
@@ -76,179 +130,235 @@
         <p>Aventura</p>
         <div class="owl-carousel owl-theme">
             <div class="item">
-                <img class="box-filme" src="img/min1.jpg" alt="a" srcset="">
+                <a href="https://www.youtube.com/watch?v=c3okNTmgKWE" target="_blank" rel="external"><img
+                        class="box-filme" src="img/min1.jpg" alt="a" srcset=""></a>
             </div>
             <div class="item">
-                <img class="box-filme" src="img/min2.jpg" alt="a" srcset="">
+                <a href="https://www.youtube.com/watch?v=GL3qXWOkpp8" target="_blank" rel="external"><img
+                        class="box-filme" src="img/min2.jpg" alt="a" srcset=""></a>
             </div>
             <div class="item">
-                <img class="box-filme" src="img/min3.jpg" alt="a" srcset="">
+                <a href="https://www.youtube.com/watch?v=FCFGKDc8h2c" target="_blank" rel="external"><img
+                        class="box-filme" src="img/min3.jpg" alt="a" srcset=""></a>
             </div>
             <div class="item">
-                <img class="box-filme" src="img/min4.jpg" alt="a" srcset="">
+                <a href="https://www.youtube.com/watch?v=xk0XY83eEuM" target="_blank" rel="external"><img
+                        class="box-filme" src="img/min4.jpg" alt="a" srcset=""></a>
             </div>
             <div class="item">
-                <img class="box-filme" src="img/min5.jpg" alt="a" srcset="">
+                <a href="https://www.youtube.com/watch?v=yuzXPzgBDvo" target="_blank" rel="external"><img
+                        class="box-filme" src="img/min5.jpg" alt="a" srcset=""></a>
             </div>
             <div class="item">
-                <img class="box-filme" src="img/min6.jpg" alt="a" srcset="">
+                <a href="https://www.youtube.com/watch?v=VApVpvcGW1A" target="_blank" rel="external"><img
+                        class="box-filme" src="img/min6.jpg" alt="a" srcset=""></a>
             </div>
             <div class="item">
-                <img class="box-filme" src="img/min7.jpg" alt="a" srcset="">
+                <a href="https://www.youtube.com/watch?v=YmRRBSA06tE" target="_blank" rel="external"><img
+                        class="box-filme" src="img/min7.jpg" alt="a" srcset=""></a>
             </div>
             <div class="item">
-                <img class="box-filme" src="img/min8.jpg" alt="a" srcset="">
+                <a href="https://www.youtube.com/watch?v=plhDSsr7qZ4" target="_blank" rel="external"><img
+                        class="box-filme" src="img/min8.jpg" alt="a" srcset=""></a>
             </div>
             <div class="item">
-                <img class="box-filme" src="img/min9.jpg" alt="a" srcset="">
+                <a href="https://www.youtube.com/watch?v=qqOPd5jKYG4" target="_blank" rel="external"><img
+                        class="box-filme" src="img/min9.jpg" alt="a" srcset=""></a>
             </div>
             <div class="item">
-                <img class="box-filme" src="img/min10.jpg" alt="a" srcset="">
+                <a href="https://www.youtube.com/watch?v=41rnGfMsF6w" target="_blank" rel="external"><img
+                        class="box-filme" src="img/min10.jpg" alt="a" srcset=""></a>
             </div>
             <div class="item">
-                <img class="box-filme" src="img/min11.jpg" alt="a" srcset="">
+                <a href="https://www.youtube.com/watch?v=KtpFx0JsT90" target="_blank" rel="external"><img
+                        class="box-filme" src="img/min11.jpg" alt="a" srcset=""></a>
             </div>
             <div class="item">
-                <img class="box-filme" src="img/min12.jpg" alt="a" srcset="">
+                <a href="https://www.youtube.com/watch?v=ynCqco_hASw" target="_blank" rel="external"><img
+                        class="box-filme" src="img/min12.jpg" alt="a" srcset=""></a>
             </div>
             <div class="item">
-                <img class="box-filme" src="img/min13.jpg" alt="a" srcset="">
+                <a href="https://www.youtube.com/watch?v=Ijps--5VNS0" target="_blank" rel="external"><img
+                        class="box-filme" src="img/min13.jpg" alt="a" srcset=""></a>
             </div>
             <div class="item">
-                <img class="box-filme" src="img/min14.jpg" alt="a" srcset="">
+                <a href="https://www.youtube.com/watch?v=ilmNQR-QyTs" target="_blank" rel="external"><img
+                        class="box-filme" src="img/min14.jpg" alt="a" srcset=""></a>
             </div>
             <div class="item">
-                <img class="box-filme" src="img/min15.jpg" alt="a" srcset="">
+                <a href="https://www.youtube.com/watch?v=-xaTNG-To_Q" target="_blank" rel="external"><img
+                        class="box-filme" src="img/min15.jpg" alt="a" srcset=""></a>
             </div>
             <div class="item">
-                <img class="box-filme" src="img/min16.jpg" alt="a" srcset="">
+                <a href="https://www.youtube.com/watch?v=qT6g5OoyFvo" target="_blank" rel="external"><img
+                        class="box-filme" src="img/min16.jpg" alt="a" srcset=""></a>
             </div>
         </div>
 
-        <p>Documentários</p>
+        <p><a name="documentario">Documentários</a></p>
         <div class="owl-carousel owl-theme">
             <div class="item">
-                <img class="box-filme" src="img/doc1.jpg" alt="a" srcset="">
+                <a href="https://www.youtube.com/watch?v=I8Az_IIgw4U" target="_blank" rel="external"><img
+                        class="box-filme" src="img/doc1.jpg" alt="a" srcset=""></a>
             </div>
             <div class="item">
-                <img class="box-filme" src="img/doc2.jpg" alt="a" srcset="">
+                <a href="https://www.youtube.com/watch?v=c8aFcHFu8QM" target="_blank" rel="external"><img
+                        class="box-filme" src="img/doc2.jpg" alt="a" srcset=""></a>
             </div>
             <div class="item">
-                <img class="box-filme" src="img/doc3.jpg" alt="a" srcset="">
+                <a href="https://www.youtube.com/watch?v=IBws4yj7W1A" target="_blank" rel="external"><img
+                        class="box-filme" src="img/doc3.jpg" alt="a" srcset=""></a>
             </div>
             <div class="item">
-                <img class="box-filme" src="img/doc4.jpg" alt="a" srcset="">
+                <a href="https://www.youtube.com/watch?v=B8V33L8QOn0" target="_blank" rel="external"><img
+                        class="box-filme" src="img/doc4.jpg" alt="a" srcset=""></a>
             </div>
             <div class="item">
-                <img class="box-filme" src="img/doc5.jpg" alt="a" srcset="">
+                <a href="https://www.youtube.com/watch?v=64R2MYUt394" target="_blank" rel="external"><img
+                        class="box-filme" src="img/doc5.jpg" alt="a" srcset=""></a>
             </div>
             <div class="item">
-                <img class="box-filme" src="img/doc6.jpg" alt="a" srcset="">
+                <a href="https://www.youtube.com/watch?v=nV04zyfLyN4" target="_blank" rel="external"><img
+                        class="box-filme" src="img/doc6.jpg" alt="a" srcset=""></a>
             </div>
             <div class="item">
-                <img class="box-filme" src="img/doc7.jpg" alt="a" srcset="">
+                <a href="https://www.youtube.com/watch?v=4va7CuH6K2w" target="_blank" rel="external"><img
+                        class="box-filme" src="img/doc7.jpg" alt="a" srcset=""></a>
             </div>
             <div class="item">
-                <img class="box-filme" src="img/doc8.jpg" alt="a" srcset="">
+                <a href="https://www.youtube.com/watch?v=0Co1Iptd4p4" target="_blank" rel="external"><img
+                        class="box-filme" src="img/doc8.jpg" alt="a" srcset=""></a>
             </div>
             <div class="item">
-                <img class="box-filme" src="img/doc9.jpg" alt="a" srcset="">
+                <a href="https://www.youtube.com/watch?v=1Q5CXN7soQg" target="_blank" rel="external"><img
+                        class="box-filme" src="img/doc9.jpg" alt="a" srcset=""></a>
             </div>
             <div class="item">
-                <img class="box-filme" src="img/doc10.jpg" alt="a" srcset="">
+                <a href="https://www.youtube.com/watch?v=B1wp2MQCsfQ" target="_blank" rel="external"><img
+                        class="box-filme" src="img/doc10.jpg" alt="a" srcset=""></a>
             </div>
             <div class="item">
-                <img class="box-filme" src="img/doc11.jpg" alt="a" srcset="">
+                <a href="https://www.youtube.com/watch?v=fLOeH-Oq_1Y" target="_blank" rel="external"><img
+                        class="box-filme" src="img/doc11.jpg" alt="a" srcset=""></a>
             </div>
             <div class="item">
-                <img class="box-filme" src="img/doc12.jpg" alt="a" srcset="">
+                <a href="https://www.youtube.com/watch?v=6zrn4-FfbXw" target="_blank" rel="external"><img
+                        class="box-filme" src="img/doc12.jpg" alt="a" srcset=""></a>
             </div>
             <div class="item">
-                <img class="box-filme" src="img/doc13.jpg" alt="a" srcset="">
+                <a href="https://www.youtube.com/watch?v=c2iEXWNqT50" target="_blank" rel="external"><img
+                        class="box-filme" src="img/doc13.jpg" alt="a" srcset=""></a>
             </div>
             <div class="item">
-                <img class="box-filme" src="img/doc14.jpg" alt="a" srcset="">
+                <a href="https://www.youtube.com/watch?v=iMy0ely7poo" target="_blank" rel="external"><img
+                        class="box-filme" src="img/doc14.jpg" alt="a" srcset=""></a>
             </div>
             <div class="item">
-                <img class="box-filme" src="img/doc15.jpg" alt="a" srcset="">
+                <a href="https://www.youtube.com/watch?v=BoKyMzsa4Xs" target="_blank" rel="external"><img
+                        class="box-filme" src="img/doc15.jpg" alt="a" srcset=""></a>
             </div>
             <div class="item">
-                <img class="box-filme" src="img/doc16.jpg" alt="a" srcset="">
+                <a href="https://www.youtube.com/watch?v=aUDmxiPfCjQ" target="_blank" rel="external"><img
+                        class="box-filme" src="img/doc16.jpg" alt="a" srcset=""></a>
             </div>
         </div>
 
         <p>Desenhos</p>
         <div class="owl-carousel owl-theme">
             <div class="item">
-                <img class="box-filme" src="img/des1.jpg" alt="a" srcset="">
+                <a href="https://www.youtube.com/watch?v=9ikp_fFYb-w" target="_blank" rel="external"><img
+                        class="box-filme" src="img/des1.jpg" alt="a" srcset=""></a>
             </div>
             <div class="item">
-                <img class="box-filme" src="img/des2.jpg" alt="a" srcset="">
+                <a href="https://www.youtube.com/watch?v=VMENQ2tbQSw" target="_blank" rel="external"><img
+                        class="box-filme" src="img/des2.jpg" alt="a" srcset=""></a>
             </div>
             <div class="item">
-                <img class="box-filme" src="img/des3.jpg" alt="a" srcset="">
+                <a href="https://www.youtube.com/watch?v=RE3S022HGhQ" target="_blank" rel="external"><img
+                        class="box-filme" src="img/des3.jpg" alt="a" srcset=""></a>
             </div>
             <div class="item">
-                <img class="box-filme" src="img/des4.jpg" alt="a" srcset="">
+                <a href="https://www.youtube.com/watch?v=2Qw7jdr8EcM" target="_blank" rel="external"><img
+                        class="box-filme" src="img/des4.jpg" alt="a" srcset=""></a>
             </div>
             <div class="item">
-                <img class="box-filme" src="img/des5.jpg" alt="a" srcset="">
+                <a href="https://www.youtube.com/watch?v=q_uA3BY6jqY" target="_blank" rel="external"><img
+                        class="box-filme" src="img/des5.jpg" alt="a" srcset=""></a>
             </div>
             <div class="item">
-                <img class="box-filme" src="img/des6.jpg" alt="a" srcset="">
+                <a href="https://www.youtube.com/watch?v=5LptimBauZw" target="_blank" rel="external"><img
+                        class="box-filme" src="img/des6.jpg" alt="a" srcset=""></a>
             </div>
             <div class="item">
-                <img class="box-filme" src="img/des7.jpg" alt="a" srcset="">
+                <a href="https://www.youtube.com/watch?v=LnEa3Dds7k4" target="_blank" rel="external"><img
+                        class="box-filme" src="img/des7.jpg" alt="a" srcset=""></a>
             </div>
             <div class="item">
-                <img class="box-filme" src="img/des8.jpg" alt="a" srcset="">
+                <a href="https://www.youtube.com/watch?v=Txl-FlrdK7Q" target="_blank" rel="external"><img
+                        class="box-filme" src="img/des8.jpg" alt="a" srcset=""></a>
             </div>
             <div class="item">
-                <img class="box-filme" src="img/des9.jpg" alt="a" srcset="">
+                <a href="https://www.youtube.com/watch?v=b5EcRbTWm2A" target="_blank" rel="external"><img
+                        class="box-filme" src="img/des9.jpg" alt="a" srcset=""></a>
             </div>
             <div class="item">
-                <img class="box-filme" src="img/des10.jpg" alt="a" srcset="">
+                <a href="https://www.youtube.com/watch?v=n8rIl7lKJ7Y" target="_blank" rel="external"><img
+                        class="box-filme" src="img/des10.jpg" alt="a" srcset=""></a>
             </div>
             <div class="item">
-                <img class="box-filme" src="img/des11.jpg" alt="a" srcset="">
+                <a href="https://www.youtube.com/watch?v=UVzdqPepzng" target="_blank" rel="external"><img
+                        class="box-filme" src="img/des11.jpg" alt="a" srcset=""></a>
             </div>
             <div class="item">
-                <img class="box-filme" src="img/des12.jpg" alt="a" srcset="">
+                <a href="https://www.youtube.com/watch?v=tcLb0mYVLO8" target="_blank" rel="external"><img
+                        class="box-filme" src="img/des12.jpg" alt="a" srcset=""></a>
             </div>
             <div class="item">
-                <img class="box-filme" src="img/des13.jpg" alt="a" srcset="">
+                <a href="https://www.youtube.com/watch?v=67tNWU_P7pg" target="_blank" rel="external"><img
+                        class="box-filme" src="img/des13.jpg" alt="a" srcset=""></a>
             </div>
             <div class="item">
-                <img class="box-filme" src="img/des14.jpg" alt="a" srcset="">
+                <a href="https://www.youtube.com/watch?v=VONRQMx78YI" target="_blank" rel="external"><img
+                        class="box-filme" src="img/des14.jpg" alt="a" srcset=""></a>
             </div>
             <div class="item">
-                <img class="box-filme" src="img/des15.jpg" alt="a" srcset="">
+                <a href="https://www.youtube.com/watch?v=sc-C8uumMkw" target="_blank" rel="external"><img
+                        class="box-filme" src="img/des15.jpg" alt="a" srcset=""></a>
             </div>
             <div class="item">
-                <img class="box-filme" src="img/des16.jpg" alt="a" srcset="">
+                <a href="https://www.youtube.com/watch?v=wOpNdR0TIR0" target="_blank" rel="external"><img
+                        class="box-filme" src="img/des16.jpg" alt="a" srcset=""></a>
             </div>
         </div>
     </div>
 
     <footer>
+        <a name="rodape"></a>
         <p>
-            <a href="https://www.facebook.com/mario.luiz.96/" target="_blank" rel="external"><i class="fa-brands fa-facebook-square"></i></a>
-            <a href="https://www.linkedin.com/in/mlca/" target="_blank"><i class="fa-brands fa-linkedin" rel="external"></i></a>
-            <a href="https://web.whatsapp.com/send?phone=5521994290044" target="_blank"><i class="fa-brands fa-whatsapp-square"></i></a>
-            <a href="https://github.com/MarioLuizHelloworld" target="_blank" rel="external"><i class="fa-brands fa-github-square"></i></a>
+            <a href="https://www.facebook.com/mario.luiz.96/" target="_blank" rel="external"><i
+                    class="fa-brands fa-facebook-square"></i></a>
+            <a href="https://www.linkedin.com/in/mlca/" target="_blank"><i class="fa-brands fa-linkedin"
+                    rel="external"></i></a>
+            <a href="https://web.whatsapp.com/send?phone=5521994290044" target="_blank"><i
+                    class="fa-brands fa-whatsapp-square"></i></a>
+            <a href="https://github.com/MarioLuizHelloworld" target="_blank" rel="external"><i
+                    class="fa-brands fa-github-square"></i></a>
         </p>
+
+        <p class="inc"><a href="page04.html" rel="next" target="_self">Privacidade</a></p>
 
         <p class="inc"><a href="page02.html" rel="next" target="_self">Carreira</a></p>
 
         <p class="inc"><i class="fa-solid fa-copyright"></i> 03/2022 ANIMALFLIX,INC.</p>
-        
+
     </footer>
     <!--Tudo O que for Javascript coloque no final da página-->
 
     <script src="https://kit.fontawesome.com/2c6072e08f.js" crossorigin="anonymous"></script>
-    
+
     <script src="js/owl/jquery.min.js"></script>
     <script src="js/owl/owl.carousel.min.js"></script>
     <script src="js/owl/setup.js"></script>
 </body>
+
 </html>

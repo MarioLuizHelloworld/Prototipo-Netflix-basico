@@ -34,8 +34,13 @@ header .container{
 .logo{
     margin-left: 6px;
     color: var(--vermelho);
-    font-family: var(--netflix);
+    font-family: var(--netflix), Arial, Helvetica, sans-serif;
     font-size: 2.4em;
+}
+
+.logo a{
+    text-decoration: none;
+    color: var(--vermelho);
 }
 
 header nav a{
@@ -46,6 +51,11 @@ header nav a{
 
 header nav a:hover{
     color: #fff;
+}
+
+header nav a:active{
+    color: #E50914;
+    text-decoration: underline;
 }
 
 main h3 {
@@ -94,6 +104,7 @@ main h3 {
     background-color: white;
     color: var(--preta);
     transition: .4s;
+    cursor: pointer;
 }
 
 .botao i{
@@ -101,9 +112,9 @@ main h3 {
 }
 
 .box-filme{
-    height: 100%;
-    width: 100%;
+    width: 10%;
     display: block;
+    height: 250px;
 }
 
 .owl-theme{
@@ -147,37 +158,69 @@ footer a:hover{
 .bg-modal{
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.253);
     position: fixed;
     z-index: 2;
     top: 100%;
-    display: flex;
+    display: block;
     transition: 350ms;
 }
 
 .modal{
     width: 70%;
-    height: 90%;
-    background-color: #141414;
+    height:85%;
+    background-color: #181818;
     border: 1px solid #000;
     border-radius: 5px;
-    margin: 80px auto 0 auto;
-    color: white;
-    font-size: var(--netflix);
+    margin: 60px auto 0 auto;
+    color: #e6e3e3;
+    font-family: var(--netflix), Arial, Helvetica, sans-serif;
     overflow: auto;
+    font-size: 15px;
+    box-shadow: 3px 3px 15px black;
+    justify-items: center;
+    text-align: justify;
+    padding-bottom: 8px;
 }
 
 .img{
-    align-items: center;
     border-radius: 5px;
-    background-color: transparent;
+    margin-top: -30px;
+}
+
+strong{
+    color: #3BA856;
+}
+
+.bg-modal ul{
+    columns: 2;
+    list-style-type: none;
+}
+
+.curriculo{
+    text-decoration: none;
+    color: #e6e3e3;
+    margin: 20px;
+}
+
+.curriculo:a{
+    color: #fff;
+}
+
+.curriculo:active{
+    color: #E50914;
+    text-decoration: underline;
+}
+
+.space{
+    margin: 20px;
 }
 
 .modal span{
     float: right;
     font-size: 30px;
-    color: #000;
-    margin: 20px 20px;
+    color: rgb(136, 136, 136);
+    margin: 0px 5px 20px 20px;
     transition: 350px;
     cursor: pointer;
 }
@@ -185,5 +228,4 @@ footer a:hover{
 .modal span:hover{
     color: #990000;
     transition: 350ms;
-    
 }

@@ -5,44 +5,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Me contrata</title>
-
+    <title>Trailer filme principal</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style/responsive.css">
-    <style>
-        h1 {
-            text-align: center;
-            font-size: 50px;
-            color: #E50914;
-            margin-top: 180px;
-            margin-bottom: 50px;
-        }
-
-        main a {
-            padding: 5px;
-            text-decoration: none;
-        }
-
-        main{
-            text-align: center;
-            padding-bottom: 120px;
-        }
-
-        a {
-            color: white;
-        }
-
-        a:active {
-            color: #E50914;
-            text-decoration: underline;
-        }
-
-        .container a:active {
-            color: #E50914;
-            text-decoration: underline;
-        }
-    </style>
 </head>
+
+<style>
+    main {
+        text-align: center;
+        margin-top: 100px;
+    }
+
+    main a {
+        padding: 5px;
+        text-decoration: none;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 50px;
+        color: #E50914;
+        margin-top: 10px;
+        margin-bottom: 50px;
+    }
+
+    main p {
+        margin-bottom: 50px;
+    }
+
+    a {
+        color: white;
+    }
+
+    a:active {
+        color: #E50914;
+        text-decoration: underline;
+    }
+
+    .container a:active {
+        color: #E50914;
+        text-decoration: underline;
+    }
+
+    .video {
+        margin: 0px -20px 0px -20px;
+        padding: 20px;
+        padding-bottom: 57%;
+        position: relative;
+
+    }
+
+    .video>iframe {
+        position: absolute;
+        top: 5%;
+        left: 15%;
+        width: 70%;
+        height: 70%;
+    }
+</style>
 
 <body>
     <header>
@@ -54,12 +74,21 @@
                 <a href="page03.html">Filmes</a>
                 <a href="index.html">Documentários</a>
             </nav>
-
         </div>
     </header>
+
     <main>
-        <h1>ME CONTRATA DIO!!!</h1>
-        <p>Para voltar para a primeira pagina, clique na logo, em Inicio ou<a href="index.html" rel="prev">Clique aqui</a> &#X1F448</p>
+        <h1>Assista o Trailer deste incrível documentário!</h1>
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/3_WvasZwTqU"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+
+
+        <p>Para voltar para a primeira pagina, clique na logo, em Inicio ou<a href="index.html" rel="prev"> Clique
+                aqui</a> &#X1F448</p>
     </main>
 
     <footer>
@@ -77,14 +106,12 @@
             <a href="https://github.com/MarioLuizHelloworld" target="_blank" rel="external"><i
                     class="fa-brands fa-github-square"></i></a>
         </p>
-
+        <p class="inc"><a href="page02.html" rel="next" target="_self">Carreira</a></p>
         <p class="inc"><a href="page04.html" rel="next" target="_self">Privacidade</a></p>
-
         <p class="inc"><i class="fa-solid fa-copyright"></i> 03/2022 ANIMALFLIX,INC.</p>
     </footer>
 
     <script src="https://kit.fontawesome.com/2c6072e08f.js" crossorigin="anonymous"></script>
-
 </body>
 
 </html>

@@ -16,7 +16,7 @@ $('.owl-carousel').owlCarousel({
 })
 
 function abrirModal(){
-    document.getElementById('modal').style.top = "-1%";
+    document.getElementById('modal').style.top = "0";
 }
 
 function fecharModal(){
